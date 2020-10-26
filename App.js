@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import {Text,Button,Input,Block,NavBar} from 'galio-framework'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <NavBar back title="Lets travel boys!"></NavBar>
+      <Text p muted>Open up s to start working on your app!</Text>
+      <Button round> Basic Bitch Button</Button>
+      <Input rounded placeholder="Type into me!"></Input>
       <StatusBar style="auto" />
     </View>
   );
